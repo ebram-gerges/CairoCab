@@ -1,0 +1,110 @@
+body {
+    background-image: url('image.jpg');
+    background-size: cover; /* Ensure the background image covers the entire background */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px; /* Added padding to ensure visibility */
+}
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5); /* Less translucent */
+    backdrop-filter: blur(10px); /* Glassy effect */
+    padding: 30px;
+    border-radius: 20px; /* Rounded corners */
+    border: 2px solid #a52a2a; /* Brown border */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 20px; /* Added margin to ensure visibility */
+}
+
+.logo {
+    max-width: 80px; /* Smaller logo size */
+}
+
+.social-media-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly less translucent */
+    border: 1px solid #ffd700; /* Gold border */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: #ffd700; /* Gold color */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    margin-right: 10px;
+}
+
+.btn-custom {
+    background-color: #a52a2a; /* Brown color */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #8b4513; /* Darker brown color */
+    transform: scale(1.05);
+}
+
+h1, .lead {
+    color: #ffd700; /* Gold color */
+}
+
+h1 {
+    border-bottom: 2px solid #a52a2a; /* Brown underline */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin-top: 10px; /* Adjusted for mobile view */
+    }
+    .logo {
+        max-width: 60px; /* Smaller logo size for mobile */
+    }
+    h1 {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+    .lead {
+        font-size: 1em; /* Smaller font size for mobile */
+    }
+}
